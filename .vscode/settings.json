@@ -1,7 +1,0 @@
-{
-  "python.defaultInterpreterPath": "env\\Scripts\\python.exe",
-  "terminal.integrated.env.windows": {
-    "VIRTUAL_ENV": "${workspaceFolder}\\env",
-    "PATH": "${workspaceFolder}\\env\\Scripts;${env:PATH}"
-  }
-}
