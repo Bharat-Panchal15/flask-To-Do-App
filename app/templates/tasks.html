@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Tasks{% endblock %}
+
+{% block content %}
+    <h1>My Tasks</h1>
+    <ul id="task-list"></ul>
+
+    <input type="text" id="new-task-input" placeholder="Enter task title" >
+    <button id="add-task-btn">Add Task</button>
+{% endblock %}
+
+{% block scripts %}
+    <script src="{{ url_for('static', filename='js/tasks.js') }}" defer></script>
+{% endblock %}

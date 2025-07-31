@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+nav {
+    background-color: #3498db;
+    padding: 1em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logout-btn {
+    padding: 0.6em 0.8em;
+    background-color: #e74c3c;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.logout-btn:hover {
+    background-color: #c0392b;
+}
+
+
+footer {
+    margin-top: 2em;
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+#task-list li {
+    color: #000;
+    margin: 8px 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#new-task-input {
+    padding: 0.8em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-bottom: 1em;
+    margin-left: 10px;
+}
+
+.task-btn {
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.task-btn.done {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.task-btn.done:hover {
+    background-color: #45a049;
+}
+
+.task-btn.pending {
+    background-color: #f39c12;
+    color: white;
+}
+
+.task-btn.pending:hover {
+    background-color: #e67e22;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.delete:hover {
+    background-color: #c0392b;
+}
+
+#add-task-btn {
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#add-task-btn:hover {
+    background-color: #27ae60;
+}
+
+.auth-container {
+    max-width: 400px;
+    margin: 2em auto;
+    padding: 2em;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.auth-container h2 {
+    margin-bottom: 2em;
+    color: #3498db;
+}
+
+.auth-container label {
+    text-align: left;
+    font-weight: bold;
+    margin-top: 0.5em;
+    color: #555;
+}
+
+.auth-container input {
+    padding: 0.8em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+.auth-container button {
+    padding: 0.8em;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.auth-container button:hover {
+    background-color: #2980b9;
+}
+
+.container.text-center {
+    margin-top: 10vh;
+    padding: 2em;
+}
+
+.container.text-center h1 {
+    font-size:  4rem;
+    color: #e74c3c;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.container.text-center p {
+    font-size: 1.3rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.container.text-center a {
+    text-decoration: none;
+    background-color: #3498db;
+    color: white;
+    padding: 0.8rem 1.6rem;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: backgroundcolor 0.3s ease;
+}
+
+.container.text-center a:hover {
+    background-color: #2980b9;
+}
