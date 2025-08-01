@@ -54,10 +54,5 @@ def create_app(config_class='app.config.DevelopmentConfig'):
     def internal_error(error):
         logging.error(f"500 Error: {request.path}")
         return render_template('500.html'),500
-    
-    with app.app_context():
-        from . import models
-        db.create_all()
-
 
     return app
