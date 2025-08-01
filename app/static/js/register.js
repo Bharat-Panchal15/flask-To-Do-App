@@ -12,6 +12,9 @@ registerForm.addEventListener('submit', async (e) => {
     if (password !== confirmPassword) {
         para.textContent = 'Passwords do not match!';
         para.style.color = 'red';
+        setTimeout(() => {
+            para.textContent = '';
+        }, 3000);
         return;
     }
 
@@ -29,15 +32,24 @@ registerForm.addEventListener('submit', async (e) => {
         if (data.status === 'success') {
             para.textContent = 'Registration Successful!';
             para.style.color = 'green';
+            setTimeout(() => {
+                para.textContent = '';
+            }, 3000);
             registerForm.reset();
         } else {
             para.textContent = 'Registration Failed!';
             para.style.color = 'red';
+            setTimeout(() => {
+                para.textContent = '';
+            }, 3000);
         }
-
+        
     } catch (error) {
         console.error(error);
         para.textContent = 'Something Went Wrong';
         para.style.color = 'red';
+        setTimeout(() => {
+            para.textContent = '';
+        }, 3000);
     }
 });
